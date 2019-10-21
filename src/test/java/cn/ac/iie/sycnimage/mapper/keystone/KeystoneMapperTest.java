@@ -1,6 +1,5 @@
-package cn.ac.iie.sycnimage.mapper.sglance;
+package cn.ac.iie.sycnimage.mapper.keystone;
 
-import cn.ac.iie.sycnimage.model.Image;
 import org.junit.Test;
 import org.junit.runner.RunWith;
 import org.springframework.beans.factory.annotation.Autowired;
@@ -9,19 +8,19 @@ import org.springframework.boot.test.context.SpringBootTest;
 import org.springframework.test.context.junit4.SpringRunner;
 
 /**
- * Created by hongtao on 2019/10/18.
+ * Created by hongtao on 2019/10/21.
  */
 @RunWith(SpringRunner.class)
 @SpringBootTest
 @EnableAutoConfiguration
-public class ImageMapperTest {
+public class KeystoneMapperTest {
 
     @Autowired
-    private ImageMapper imageMapper;
+    private KeystoneMapper keystoneMapper;
 
     @Test
-    public void getImageById() {
-        Image image = imageMapper.getImageById("49b4a65e-cabb-432e-ad0b-a59fad5bb57b");
-        System.out.println(image);
+    public void getUserIdByName() {
+        String userId = keystoneMapper.getUserIdByName("admin");
+        System.out.println(userId);
     }
 }
