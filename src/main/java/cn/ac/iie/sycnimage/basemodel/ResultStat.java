@@ -14,7 +14,11 @@ public enum ResultStat {
 
     FORBIDDEN(403),
 
-    RESOURCE_NOT_EXIST(404);
+    RESOURCE_NOT_EXIST(404),
+
+    IMAGE_NOT_EXIST(1001),
+    USER_NOT_EXIST(1002),
+    INSERT_IMAGE_FAILED(1003);
 
     //!!----------------do not modify code below------------------!!
     public final int responseCode;
