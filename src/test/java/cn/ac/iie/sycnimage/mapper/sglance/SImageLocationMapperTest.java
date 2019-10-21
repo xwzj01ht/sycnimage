@@ -16,14 +16,14 @@ import java.util.List;
 @RunWith(SpringRunner.class)
 @SpringBootTest
 @EnableAutoConfiguration
-public class ImageLocationMapperTest {
+public class SImageLocationMapperTest {
 
     @Autowired
-    private ImageLocationMapper imageLocationMapper;
+    private SImageLocationMapper sImageLocationMapper;
 
     @Test
     public void getImageLocationsByImageId() {
-        List<ImageLocation> imageLocations = imageLocationMapper.getImageLocationsByImageId("ff965a65-52fb-4fde-9bec-41e7334d4c8d");
+        List<ImageLocation> imageLocations = sImageLocationMapper.getImageLocationsByImageId("ff965a65-52fb-4fde-9bec-41e7334d4c8d");
         System.out.println(imageLocations);
     }
 }

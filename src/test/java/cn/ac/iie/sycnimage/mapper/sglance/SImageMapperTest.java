@@ -14,14 +14,14 @@ import org.springframework.test.context.junit4.SpringRunner;
 @RunWith(SpringRunner.class)
 @SpringBootTest
 @EnableAutoConfiguration
-public class ImageMapperTest {
+public class SImageMapperTest {
 
     @Autowired
-    private ImageMapper imageMapper;
+    private SImageMapper sImageMapper;
 
     @Test
     public void getImageById() {
-        Image image = imageMapper.getImageById("49b4a65e-cabb-432e-ad0b-a59fad5bb57b");
+        Image image = sImageMapper.getImageById("49b4a65e-cabb-432e-ad0b-a59fad5bb57b");
         System.out.println(image);
     }
 }

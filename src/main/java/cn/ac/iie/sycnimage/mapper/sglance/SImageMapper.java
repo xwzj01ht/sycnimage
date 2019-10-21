@@ -9,7 +9,7 @@ import org.apache.ibatis.annotations.Select;
  * Created by hongtao on 2019/10/18.
  */
 @Mapper
-public interface ImageMapper {
+public interface SImageMapper {
 
     @Select("SELECT id, name, size, status, created_at as createdAt, updated_at as updatedAt, " +
             "deleted_at as deletedAt, deleted, disk_format as diskFormat, container_format as containerFormat, " +

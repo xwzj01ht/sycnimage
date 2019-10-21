@@ -11,7 +11,7 @@ import java.util.List;
  * Created by hongtao on 2019/10/21.
  */
 @Mapper
-public interface ImageLocationMapper {
+public interface SImageLocationMapper {
 
     @Select("SELECT id, image_id as imageId, value, created_at as createdAt, updated_at as updatedAt, " +
             "deleted_at as deletedAt, deleted, meta_data as metaData, status FROM image_locations WHERE image_id=#{imageId}")
