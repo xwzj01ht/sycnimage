@@ -1,19 +1,19 @@
 package cn.ac.iie.sycnimage.controller;
 
 import cn.ac.iie.sycnimage.basemodel.HttpResponseTemp;
-import cn.ac.iie.sycnimage.basemodel.ResultStat;
 import cn.ac.iie.sycnimage.consolemodel.UserImage;
 import cn.ac.iie.sycnimage.service.image.ImageService;
+import io.swagger.annotations.Api;
 import io.swagger.annotations.ApiOperation;
 import org.slf4j.Logger;
 import org.slf4j.LoggerFactory;
 import org.springframework.beans.factory.annotation.Autowired;
-import org.springframework.http.HttpStatus;
 import org.springframework.web.bind.annotation.*;
 
 /**
  * Created by hongtao on 2019/10/21.
  */
+@Api(value = "镜像controller",tags = {"镜像操作接口"})
 @RestController
 @RequestMapping("/api")
 public class ImageController {
