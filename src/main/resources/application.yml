@@ -1,20 +1,23 @@
+server:
+  port: 9999
+
 spring:
   datasource:
     sglance:
-      driverClassName: com.mysql.cj.jdbc.Driver
-      jdbc-url: jdbc:mysql://10.10.110.22:3306/glance?useUnicode=true&characterEncoding=utf-8
-      username: glance
-      password: glance
-      driver-class-name: com.mysql.cj.jdbc.Driver
-    dglance:
       driverClassName: com.mysql.cj.jdbc.Driver
       jdbc-url: jdbc:mysql://10.10.110.7:3306/glance?useUnicode=true&characterEncoding=utf-8
       username: glance
       password: glance
       driver-class-name: com.mysql.cj.jdbc.Driver
+    dglance:
+      driverClassName: com.mysql.cj.jdbc.Driver
+      jdbc-url: jdbc:mysql://10.10.110.111:3306/glance?useUnicode=true&characterEncoding=utf-8
+      username: glance
+      password: glance
+      driver-class-name: com.mysql.cj.jdbc.Driver
     keystone:
       driverClassName: com.mysql.cj.jdbc.Driver
-      jdbc-url: jdbc:mysql://10.10.110.7:3306/keystone?useUnicode=true&characterEncoding=utf-8
+      jdbc-url: jdbc:mysql://10.10.110.111:3306/keystone?useUnicode=true&characterEncoding=utf-8
       username: keystone
       password: keystone
       driver-class-name: com.mysql.cj.jdbc.Driver

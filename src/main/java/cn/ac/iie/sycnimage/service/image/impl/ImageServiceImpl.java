@@ -54,8 +54,11 @@ public class ImageServiceImpl implements ImageService {
         }
 
         // 3.将得到的owner赋值给镜像元数据
-        image.setOwner(owner);
+//        image.setOwner(owner); // 调试发现owner代表的是project_id
+        image.setOwner(userImage.getProjectId());
         logger.info("change image owner to target database user: " + image);
+
+        image.setVisibility("public");
 
         // 4.在目标库中插入镜像元数据
         try {

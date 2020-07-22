@@ -7,6 +7,10 @@ public class UserImage {
 
     private String username;
     private String imageId;
+    private String projectId;
+
+    public UserImage() {
+    }
 
     public String getUsername() {
         return username;
@@ -24,11 +28,20 @@ public class UserImage {
         this.imageId = imageId;
     }
 
+    public String getProjectId() {
+        return projectId;
+    }
+
+    public void setProjectId(String projectId) {
+        this.projectId = projectId;
+    }
+
     @Override
     public String toString() {
         return "UserImage{" +
                 "username='" + username + '\'' +
                 ", imageId='" + imageId + '\'' +
+                ", projectId='" + projectId + '\'' +
                 '}';
     }
 }
